@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "./partials/head.html" ignore missing with context %}
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- include navbar from partials -->
+    {% include "./partials/nav.html" ignore missing with context %}
+    <h1>APOD</h1>
+    <div class="alert alert-info" role="alert">
+        <p><a href="https://api.nasa.gov/planetary/apod?api_key=H6vJVWqiaRtHgzscwnbFaAoE94GFKQnRpqj8R6Ak"></a></p>
+    </div>
+    <!-- Load common CSS and JS -->
+    {% include "./partials/dependencies.html" ignore missing with context %}
+</body>
+</html>
